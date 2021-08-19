@@ -166,6 +166,7 @@ public func verifySnapshot<Value, Format>(
   named name: String? = nil,
   record recording: Bool = false,
   snapshotDirectory: String? = nil,
+  artifactsDirectory: String? = nil,
   timeout: TimeInterval = 5,
   file: StaticString = #file,
   testName: String = #function,
@@ -267,7 +268,10 @@ public func verifySnapshot<Value, Format>(
       }
 
       let artifactsUrl = URL(
-        fileURLWithPath: ProcessInfo.processInfo.environment["SNAPSHOT_ARTIFACTS"] ?? NSTemporaryDirectory(), isDirectory: true
+        fileURLWithPath: artifactsDirectory
+          ?? ProcessInfo.processInfo.environment["SNAPSHOT_ARTIFACTS"]
+          ?? NSTemporaryDirectory(),
+        isDirectory: true
       )
       let artifactsSubUrl = artifactsUrl.appendingPathComponent(fileName)
       try fileManager.createDirectory(at: artifactsSubUrl, withIntermediateDirectories: true)
