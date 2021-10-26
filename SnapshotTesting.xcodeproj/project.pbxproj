@@ -311,6 +311,7 @@
 		9D7D5B93AE097C0B92B78931 /* Snapshotting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snapshotting.swift; sourceTree = "<group>"; };
 		A0B236137C960C05554D4310 /* AssertSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssertSnapshot.swift; sourceTree = "<group>"; };
 		A0BC8BF7E37686D31F59B9F6 /* testUpdateSnapshotWithMoreLines.1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testUpdateSnapshotWithMoreLines.1.swift; sourceTree = "<group>"; };
+		A6B9F3422728233B00499D88 /* DeploymentTarget.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DeploymentTarget.xcconfig; sourceTree = "<group>"; };
 		A76261A778A1B8C06EB7E1B4 /* Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Description.swift; sourceTree = "<group>"; };
 		A906E6EBBD9DC8CFDA3CF642 /* testUpdateSnapshotWithLessLines.1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testUpdateSnapshotWithLessLines.1.swift; sourceTree = "<group>"; };
 		AA79A05ABAE4F4EAF9E9F1E4 /* SnapshotTestingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnapshotTestingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -481,6 +482,7 @@
 			isa = PBXGroup;
 			children = (
 				86367454DF23E14D681FDE27 /* Info.plist */,
+				A6B9F3422728233B00499D88 /* DeploymentTarget.xcconfig */,
 				25CB6D7740D797F781E85C43 /* SnapshotTesting */,
 			);
 			path = Sources;
@@ -1004,6 +1006,7 @@
 		};
 		4FA7607F66B8ABA649B6056C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6B9F3422728233B00499D88 /* DeploymentTarget.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -1055,6 +1058,7 @@
 		};
 		97BC453D0A2FD987C257005F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6B9F3422728233B00499D88 /* DeploymentTarget.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
