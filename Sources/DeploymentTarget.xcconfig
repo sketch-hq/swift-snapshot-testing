@@ -1,0 +1,10 @@
+//  Created by Helen on 26/10/2021.
+//  
+
+// Created for use with Sketch.
+
+
+// Sketch/Modules/BCFoundation/Configs/BCTestsDeploymentTarget.xcconfig
+// Sketch/Modules/swift-snapshot-testing/Sources/DeploymentTarget.xcconfig
+
+#include "../../BCFoundation/Configs/BCTestsDeploymentTarget.xcconfig"
