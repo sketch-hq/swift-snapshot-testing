@@ -43,7 +43,7 @@ jobs:
     strategy:
       matrix:
         swift:
-          - "5.9.1"
+          - "5.8"
 
     name: Windows (Swift ${{ matrix.swift }})
     runs-on: windows-2019
